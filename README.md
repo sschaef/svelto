@@ -12,22 +12,13 @@ save this file. The file is never erased, so you may want to delete it from time
 
 Point Eclipse to the following update site:
 
-	http://download.scala-ide.org/plugins/svelto/releases/2.10.x/site
-
-or, for Scala 2.11:
-
-	http://download.scala-ide.org/plugins/svelto/releases/2.11.x/site
-	
-> Svelto is written in Scala, and requires the Scala library plugin. If you already have the 
-> [Scala IDE](www.scala-ide.org) plugin for 2.10, you should not have any problem running this plugin.
-> Otherwise, add the [Scala IDE update](http://download.scala-ide.org/sdk/e37/scala210/dev/site/) site to Eclipse
-> and check `Contact all update sites to find required components` on the Installation dialog.
+    http://download.scala-ide.org/plugins/svelto/releases/2.11.x/site
 
 # Build
 
 Run maven like this:
 
-    mvn -P scala-2.10.x clean install
+    mvn -P scala-2.11.x -Dscala.version=2.11.8 clean install
 
 # Hack
 
